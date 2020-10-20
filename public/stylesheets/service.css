@@ -1,0 +1,471 @@
+.public {
+  margin: auto;
+  background-color: #fffcea;
+  color: black;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  position: relative;
+  min-height: 100%;
+}
+.outerdiv {
+  color: black;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#logo {
+  display: block;
+  background-color: #fffdf2;
+  width: 250px;
+}
+
+#mainImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+#aboutus {
+  color: midnightblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+#listofservice {
+  color: midnightblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+#searchbar::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+.image-aboutus {
+  padding-right: 85px;
+  padding-top: 20px;
+}
+
+.title-page {
+  font-size: 30px;
+  color: rgb(42, 103, 204);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin-top: 0px !important;
+}
+
+#darkblue {
+  background-color: rgb(9, 66, 112);
+  color: white;
+  border: 0.5px solid grey;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+a {
+  background-color: rgba(19, 126, 107, 0.86) !important;
+  color: rgb(255, 255, 255);
+  padding: 0.3em 1em;
+  position: relative;
+  text-decoration: none;
+  text-transform: none !important;
+}
+
+a:hover {
+  cursor: pointer !important;
+  color: #e0c68e !important;
+  text-decoration: none !important;
+}
+
+a:active {
+  box-shadow: none !important;
+  top: 0px !important;
+  outline: none !important;
+  text-decoration: none !important;
+  color: #e0c68e;
+}
+
+#footer-public {
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+#lightblue {
+  background-color: rgb(26, 201, 178);
+  color: white;
+  border: 0.5px solid grey;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+#searchbutton {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #2f8b7a;
+  color: #e0c68e;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  width: 15% !important;
+  height: 45px !important;
+  border: 1px solid green;
+  border-left: none;
+  cursor: pointer;
+  float: left;
+  margin-left: 0.1px;
+}
+
+#registration-heading {
+  font-size: 15px;
+  color: rgb(148, 148, 148);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  padding-left: 20px;
+  text-align: center;
+  letter-spacing: 2;
+}
+
+#label {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(42, 103, 204);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  /* font-weight: 300; */
+}
+
+#searchbutton:hover {
+  background: #ad9251;
+  border: 1px solid #ad9251;
+}
+
+#searchinput {
+  padding: 10px;
+  font-size: 17px;
+  border: 0.5px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+ul {
+  display: flex;
+  /* justify-content: space-around; */
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(222, 222, 222);
+}
+
+li {
+  float: left;
+  display: block;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: Coda;
+  padding: 25px 0px;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  display: block;
+  min-width: 16.7%;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+ul > li {
+  flex: 1;
+}
+
+.nav-dropdown {
+  visibility: hidden;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  display: flex;
+  bottom: 0px;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+body {
+  margin: 0px;
+  background-color: white;
+  color: rgb(117, 117, 117);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+#main {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.top {
+  padding: 20px 0px;
+  margin: 0px;
+  background-color: #fffcea;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0px;
+  color: #333;
+  font-weight: 900 !important;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+#profile a {
+  color: #d0d0d0;
+  border-style: solid;
+  border-width: 2px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-style: italic;
+  font-size: 14px;
+}
+
+#profile p {
+  line-height: 10px;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.field-column input,
+.field-column select {
+  margin: auto;
+  padding: 5px;
+  width: 300px;
+}
+
+.field-column {
+  justify-content: center;
+  margin: auto;
+  padding: 5px;
+  width: 300px;
+}
+
+#center-title {
+  text-align: center;
+}
+
+#new:hover,
+#new:active,
+#new-match:hover,
+#new-match:active {
+  background-color: #000;
+}
+
+h1 {
+  letter-spacing: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Roboto;
+}
+
+.mainPageH1 {
+  padding: 50px 0px;
+  margin: 0px;
+}
+
+.mainPage {
+  height: 75vh;
+}
+
+.mainPage1 {
+  background-color: rgba(206, 170, 91, 0.65);
+  color: #333;
+  font-family: Roboto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0px 50px;
+}
+
+th,
+td {
+  border-collapse: collapse;
+  border: 2px solid #ad9251;
+  text-align: center;
+  padding: 0px 0px !important;
+  background-color: white;
+  white-space: nowrap;
+}
+
+th {
+  background-color: #dfc68c;
+  color: darkslategrey;
+  width: 100vh;
+  text-align: center !important;
+}
+
+#gender {
+  display: inline-block;
+  width: auto;
+  margin-left: 1em;
+}
+
+#genderOption {
+  padding-left: 40px;
+}
+
+.endButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+}
+
+.submittingButtons {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.messageHolder {
+  display: none;
+  justify-content: center;
+}
+
+.boxWhole {
+  display: none;
+  justify-content: center;
+  margin: 30px 30%;
+}
+
+.viewPatientButton {
+  background-color: transparent;
+}
+
+.tableButtons {
+  background-color: transparent !important;
+  color: #2f8b7a !important;
+}
+
+.tableButtons:hover {
+  color: #000;
+}
+
+.example {
+  display: flex !important;
+}
+
+.logoutButton {
+  background-color: #000 !important;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.dropbtn {
+  background-color: #cbad62;
+  color: white;
+  padding: 10px 500px;
+  font-size: 16px;
+  border: none;
+  letter-spacing: 2px;
+  font-family: Coda;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+.basic-select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+.basic-select::after {
+  content: "\25bc" !important;
+}
