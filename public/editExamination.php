@@ -45,7 +45,7 @@ $biophysicalProfile = $out['biophysicalProfile'];
     <h1 id="name"><?php echo  getExamType($id) ?></h1>
     <center>
 
-    <form action="report.php?id=<?php echo $id ?>" method="post">  
+    <form id="myForm" target="_blank" action="report.php?id=<?php echo $id ?>" method="post">  
     <br>
     <br>
         <div id="gen">
@@ -111,3 +111,9 @@ $biophysicalProfile = $out['biophysicalProfile'];
 
 
 <?php include (SHARED_PATH . '/footer.php'); ?>
+
+<script>
+$('#myForm').submit(function(e) { 
+    window.location.replace("patients.php");
+});
+</script>

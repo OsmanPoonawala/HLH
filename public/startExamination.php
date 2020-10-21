@@ -35,7 +35,7 @@ elseif ($examType == "XRay") {
     <h1 id="name"><?php echo  getExamType($id) ?></h1>
     <center>
 
-    <form action="report.php?id=<?php echo $id ?>" method="post">  
+    <form id="myForm" target="_blank" action="report.php?id=<?php echo $id ?>" method="post">  
     <select name="lister" id="lister" onchange = "ShowHideDiv()">
     <?php for ($x = 0; $x < count($list); $x++) { ?>
         <option value="<?php echo $list[$x]?>"><?php echo $list[$x]?></option>       
@@ -463,4 +463,10 @@ elseif ($examType == "XRay") {
     function resi(){
         location.reload();
     }
+</script>
+
+<script>
+$('#myForm').submit(function(e) { 
+    window.location.replace("patients.php");
+});
 </script>
