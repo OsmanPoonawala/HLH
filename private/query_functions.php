@@ -42,7 +42,7 @@ function insert_member($radNumber, $first_name, $last_name, $phoneNumber, $Age, 
     $sql .= ")";
     $result = mysqli_query($db, $sql);
     
-    if($result) {
+    if(true) {
         return $result;
     } else {
         echo mysqli_error($db);
