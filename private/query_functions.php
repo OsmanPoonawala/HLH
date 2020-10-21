@@ -45,6 +45,7 @@ function insert_member($radNumber, $first_name, $last_name, $phoneNumber, $Age, 
     if($result) {
         return $result;
     } else {
+	echo "problem is here";
         echo mysqli_error($db);
         db_disconnect($db);
         exit;
