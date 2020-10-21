@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Please Login to Access"
+AuthUserFile /HLH/.htmyxyz
+require valid-user
