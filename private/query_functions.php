@@ -43,6 +43,7 @@ function insert_member($radNumber, $first_name, $last_name, $phoneNumber, $Age, 
     $result = mysqli_query($db, $sql);
     
     if($result) {
+	echo $result;
         return $result;
     } else {
 	echo "problem is here";
