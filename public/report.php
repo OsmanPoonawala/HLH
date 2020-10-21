@@ -16,8 +16,8 @@ require_once('../vendor/autoload.php');
     $bp = $_POST['us_bp'];
     $examID = $_POST['examIDdata'];
     $minutes = rand(5,30);
-    $fName = $_SESSION['username'];
-    $lName = $_SESSION['username'];
+    $fName = $_SESSION['name'];
+    $lName = $_SESSION['surname'];
     $spec_new = $_POST['spec_new'];
 
 
