@@ -324,7 +324,13 @@ function delete_investigation($userID)
 function insert_investigation($patient_ID, $examType, $status)
 {
     global $db;
-    $sql = "INSERT INTO Investigations VALUES (null, '$patient_ID', null, '$examType', '$status')";
+    $sql = "INSERT INTO Investigations ";
+    $sql .= "(patient_ID, examType, `status`) ";
+    $sql .= "VALUES (";
+    $sql .= "'" . $patient_ID . "', ";
+    $sql .= "'" . $examType . "', ";
+    $sql .= "'" . $status . "'";
+    $sql .= ")";
     $result = mysqli_query($db, $sql);
     if($result) 
     {
