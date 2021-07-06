@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Please Login to Access"
-AuthUserFile /app/.htmyxyz
-require valid-user

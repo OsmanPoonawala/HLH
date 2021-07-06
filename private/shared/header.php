@@ -15,7 +15,7 @@
 
   <navigation>
     <div class="top">
-        <img src="images/hlh.png" class="d-flex justify-content-center" alt="HLH Radiology Department" id="logo">
+        <img src="../../public/images/hlh.png" class="d-flex justify-content-center" alt="HLH Radiology Department" id="logo">
     </div>
     <ul>
       <li><a href="<?php echo url_for('/index.php'); ?>">Main</a></li>
@@ -41,7 +41,7 @@
         <?php
         if (isset($_SESSION['userLevel'])||isset($_SESSION['nhsno'])) {
         }else{
-                echo '<li><a href=user_login.php>Staff Login</a></li>';
+                echo '<li><a href=../../public/user_login.php>Staff Login</a></li>';
         }
         ?>
 
